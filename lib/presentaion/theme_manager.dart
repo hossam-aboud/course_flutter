@@ -60,6 +60,19 @@ ThemeData getApplicationTheme() {
     ),
 
     // text theme
+    textTheme: TextTheme(
+      displayLarge: getLightTextStyle(color: ColorManager.white,
+      fontSize: FontSizeManager.s22,
+      ),
+      headline1: getSemiBoldTextStyle(color: ColorManager.darkGrey,
+      fontSize: FontSizeManager.s16,
+      ),
+      subtitle1: getMediumTextStyle(color: ColorManager.lightGrey,
+      fontSize: FontSizeManager.s14,
+      ),
+      caption: getRegularTextStyle(color: ColorManager.grey1,),
+      bodyText1: getRegularTextStyle(color: ColorManager.grey,),
+    ),
 
     // input decoration theme (text form field)
   );

@@ -49,3 +49,12 @@ TextStyle getBoldTextStyle(
       FontWeightManager.bold,
       color,
     );
+
+// semiBold Style
+TextStyle getSemiBoldTextStyle(
+    {double fontSize = FontSizeManager.s12, required Color color}) =>
+    _getTextStyle(
+      fontSize,
+      FontWeightManager.semiBold,
+      color,
+    );
