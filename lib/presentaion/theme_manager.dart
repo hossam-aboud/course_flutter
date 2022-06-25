@@ -29,7 +29,7 @@ ThemeData getApplicationTheme() {
       shadowColor: ColorManager.lightPrimary,
       titleTextStyle: getRegularTextStyle(
         color: ColorManager.white,
-        fontSize: FontSizeManager.s16,
+        fontSize: FontSize.s16,
       ),
     ),
     // button theme
@@ -46,7 +46,7 @@ ThemeData getApplicationTheme() {
       style: ElevatedButton.styleFrom(
         textStyle: getRegularTextStyle(
           color: ColorManager.white,
-          fontSize: FontSizeManager.s17,
+          fontSize: FontSize.s17,
         ),
         primary: ColorManager.primaryColor,
         shape: const RoundedRectangleBorder(
@@ -61,19 +61,77 @@ ThemeData getApplicationTheme() {
 
     // text theme
     textTheme: TextTheme(
-      displayLarge: getLightTextStyle(color: ColorManager.white,
-      fontSize: FontSizeManager.s22,
+      displayLarge: getLightTextStyle(
+        color: ColorManager.white,
+        fontSize: FontSize.s22,
       ),
-      headline1: getSemiBoldTextStyle(color: ColorManager.darkGrey,
-      fontSize: FontSizeManager.s16,
+      headline1: getSemiBoldTextStyle(
+        color: ColorManager.darkGrey,
+        fontSize: FontSize.s16,
       ),
-      subtitle1: getMediumTextStyle(color: ColorManager.lightGrey,
-      fontSize: FontSizeManager.s14,
+      subtitle1: getMediumTextStyle(
+        color: ColorManager.lightGrey,
+        fontSize: FontSize.s14,
       ),
-      caption: getRegularTextStyle(color: ColorManager.grey1,),
-      bodyText1: getRegularTextStyle(color: ColorManager.grey,),
+      caption: getRegularTextStyle(
+        color: ColorManager.grey1,
+      ),
+      bodyText1: getRegularTextStyle(
+        color: ColorManager.grey,
+      ),
     ),
 
     // input decoration theme (text form field)
+    inputDecorationTheme: InputDecorationTheme(
+      contentPadding: const EdgeInsets.all(
+        AppPadding.p8,
+      ),
+      hintStyle: getRegularTextStyle(
+        color: ColorManager.grey,
+        fontSize: FontSize.s14,
+      ),
+      labelStyle: getMediumTextStyle(
+        color: ColorManager.grey,
+        fontSize: FontSize.s14,
+      ),
+      errorStyle: getRegularTextStyle(color: ColorManager.error,
+      ),
+      enabledBorder: OutlineInputBorder(
+        borderSide: BorderSide(
+          color: ColorManager.primaryColor,
+        width: AppSize.s1_5,
+        ),
+        borderRadius: const BorderRadius.all(Radius.circular(AppSize.s8),),
+
+      ),
+
+      focusedBorder:
+      OutlineInputBorder(
+        borderSide: BorderSide(
+          color: ColorManager.grey,
+          width: AppSize.s1_5,
+        ),
+        borderRadius: const BorderRadius.all(Radius.circular(AppSize.s8),),
+
+      ),
+      errorBorder: OutlineInputBorder(
+        borderSide: BorderSide(
+          color: ColorManager.error,
+          width: AppSize.s1_5,
+        ),
+        borderRadius: const BorderRadius.all(Radius.circular(AppSize.s8),),
+
+      ),
+
+      focusedErrorBorder:  OutlineInputBorder(
+        borderSide: BorderSide(
+          color: ColorManager.primaryColor,
+          width: AppSize.s1_5,
+        ),
+        borderRadius: const BorderRadius.all(Radius.circular(AppSize.s8),),
+
+      ) ,
+
+    ),
   );
 }
