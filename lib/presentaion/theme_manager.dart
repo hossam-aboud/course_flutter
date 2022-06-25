@@ -6,6 +6,7 @@ import 'package:new_course/presentaion/value_manager.dart';
 
 ThemeData getApplicationTheme() {
   return ThemeData(
+    scaffoldBackgroundColor: ColorManager.white,
     // main colors
     primaryColor: ColorManager.primaryColor,
     primaryColorLight: ColorManager.lightPrimary,
@@ -32,6 +33,31 @@ ThemeData getApplicationTheme() {
       ),
     ),
     // button theme
+    buttonTheme: ButtonThemeData(
+      shape: const StadiumBorder(),
+      disabledColor: ColorManager.grey1,
+      buttonColor: ColorManager.primaryColor,
+      splashColor: ColorManager.lightPrimary,
+    ),
+
+    // elevated button theme
+
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        textStyle: getRegularTextStyle(
+          color: ColorManager.white,
+          fontSize: FontSizeManager.s17,
+        ),
+        primary: ColorManager.primaryColor,
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(
+              AppSize.s12,
+            ),
+          ),
+        ),
+      ),
+    ),
 
     // text theme
 
