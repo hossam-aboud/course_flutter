@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_course/presentaion/theme_manager.dart';
 
 class MyApp extends StatefulWidget {
   const MyApp._internal();
@@ -14,18 +15,15 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: getApplicationTheme(),
+
+    );
   }
 }
 
-class TestOne extends StatelessWidget {
-  const TestOne({Key? key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
 
-  updateAppState () {}
-}
+
 
