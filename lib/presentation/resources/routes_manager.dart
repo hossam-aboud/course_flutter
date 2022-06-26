@@ -3,6 +3,7 @@ import 'package:new_course/presentation/forgot_password/forgot_password_view.dar
 import 'package:new_course/presentation/login/login_view.dart';
 import 'package:new_course/presentation/main/main_view.dart';
 import 'package:new_course/presentation/register/register_view.dart';
+import 'package:new_course/presentation/resources/strings_manager.dart';
 import 'package:new_course/presentation/splash/splash_view.dart';
 import 'package:new_course/presentation/store_details/store_details_view.dart';
 
@@ -40,10 +41,10 @@ class RouteGenerator {
     return MaterialPageRoute(
       builder: (_) =>  Scaffold(
         appBar: AppBar(
-          title: const Text('No Route Defined'), // todo move this string to strings manager
+          title: const Text(AppStrings.noRouteDefined), // todo move this string to strings manager
         ),
         body: const Center(
-          child: Text('No Route Defined'),
+          child: Text(AppStrings.noRouteDefined),
         ),
       ),
     );
