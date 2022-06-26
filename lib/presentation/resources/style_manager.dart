@@ -59,3 +59,5 @@ TextStyle getSemiBoldTextStyle(
       FontWeightManager.semiBold,
       color,
     );
+
+// mdpi  , hdpi , xhdpi , xxhdpi , xxxhdpi ,
